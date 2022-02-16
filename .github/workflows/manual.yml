@@ -39,5 +39,5 @@ jobs:
           - name: ls
             run: ls -s src
           - name: Run Main
-            run: java src/Main
+            run: java ${{ github.workspace }}/src/Main
     
