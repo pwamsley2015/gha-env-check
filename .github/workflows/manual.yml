@@ -34,6 +34,8 @@ jobs:
               server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
               settings-path: ${{ github.workspace }} # location for the settings.xml file
 
+          - name: Compile Main
+            run: javac ${{ github.workspace }}/src/Main.java
           - name: Run Main
-            run: javac ${{ github.workspace }}/src/Main.java && java ${{ github.workspace }}/src/Main
+            run: java ${{ github.workspace }}/src/Main
     
