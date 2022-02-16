@@ -36,6 +36,8 @@ jobs:
 
           - name: Compile Main
             run: javac ${{ github.workspace }}/src/Main.java
+          - name: ls
+            run: ls -s
           - name: Run Main
             run: java ${{ github.workspace }}/src/Main
     
