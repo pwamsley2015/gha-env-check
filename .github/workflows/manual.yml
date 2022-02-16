@@ -35,5 +35,5 @@ jobs:
               settings-path: ${{ github.workspace }} # location for the settings.xml file
 
           - name: Run Main
-            run: javac ${{ github.workspace }}/src/Main.java && java ${{ github.workspace }}/Main
+            run: javac ${{ github.workspace }}/src/Main.java && java ${{ github.workspace }}/src/Main
     
